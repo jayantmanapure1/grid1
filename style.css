@@ -42,7 +42,9 @@ background-color: #333;
   place-items: center;
   text-align: center;
   color: #fff;
-  transition: 0.5s; 
+  transition: 2s; 
+  transition-duration: ease-in;
+  overflow: hidden;
 }
 .container .box:hover{
    background-color: #e91e63;
@@ -64,7 +66,35 @@ background-color: #333;
    grid-column: span 3;
    grid-row: span 1;
 }
+p{
+   position: relative;
+   left: -120%;
+   overflow: hidden;
+   transition: 2s;
+   transition-delay: ease-in;
+}
+.box1:hover .p1  {
+   left: 0%;
+}
 
+.box2:hover .p2  {
+   left: 0%;
+}
+.box3:hover .p3  {
+   left: 0%;
+}
+.box4:hover .p4  {
+   left: 0%;
+}
+.box5:hover .p5  {
+   left: 0%;
+}
+.box6:hover .p6  {
+   left: 0%;
+}
+.box7:hover .p7  {
+   left: 0%;
+}
 @media (max-width:991px) {
    .container{
       grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
